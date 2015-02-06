@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;" />
+<title>Tunnels@RIT</title>
+<link rel="apple-touch-icon" sizes="76x76" href="images/tunnelsicon@76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="images/tunnelsicon@120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="images/tunnelsicon@152.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="images/tunnelsicon@60.png" />
+<link rel="shortcut icon" size="192x192" href="images/tunnelsicon@192.png">
+<link rel="stylesheet" href="css/core.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/cshFont.css">
+<!-- Web App Support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="msapplication-TileColor" content="#FF9900"/>
+<meta name="application-name" content="Tunnels"/> 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/version.js"></script>
+<script src="js/nav.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkZWY51BDsHbZDemnfVS0t2RCsTZJnfZ8"></script>
+    
+<!--<script type="text/javascript" src="js/locate.min.js"></script> -->
+<script type="text/javascript" src="js/locate.js"></script>
+<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+</style>    
+</head>
+<body onload="vc()">
+<div id="map-canvas"></div>
+<div id="banner">
+
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0" height="40px">
+	    <tr>
+	      <td width="33%" align="left">
+				<button id="infoButton" class="button" style="padding-left:10px;">
+            <i class="fa fa-info-circle" style="color:#FFF; font-size:34px;"></i></button> 
+                
+    	  
+          </td>
+	      <td width="33%" align="center">
+            <span style="z-index:50;"><img src="images/logo.png" alt="" name="logo" width="150" height="40" id="logo"/></span>
+            </td>
+	      <td width="33%" align="right">
+            <span class="usersettings">
+            <button onclick="getLocationUpdate()" id="locate" class="button">
+            <i class="fa fa-compass" style="color:#FFF; font-size:34px;"></i></button> 
+    
+            </span>
+          </td>
+        </tr>
+      </table>
+      
+</div>
+<div class="information-container" id="infoPanel">
+    <div class="information-header">
+        <div style="padding-top:8px; padding-bottom:8px; padding-left: 10px;">
+        Information
+        <div style="float:right">
+        <button style="border:none; background:transparent; width:30px height:30px; color:#FF9900; font-size:25px; outline:0;" id="infoCloseButton"><i class="fa fa-close" style="padding-right:10px; padding-top:3px;"></i></button>   
+            
+        </div>
+        </div>
+        
+    </div>
+    <div class="information-content-container">
+        Check out this Project on GitHub!
+        <br>
+        <div style="padding-top:6px;"><a href="https://github.com/brandonhudson/tunnels" style="font-size:18px; color: #FF9900; padding-top:6px; text-decoration:none;">Go to Github</a></div>
+        <div style="margin-top:10px">Submit a Bug Report</div>
+        <div style="padding-top:6px;"><a href="https://github.com/brandonhudson/tunnels/issues/new" style="font-size:18px; color: #FF9900; text-decoration:none;">New Bug Report</a></div>
+        <div style="padding-bottom:40px"></div>
+        
+    
+    </div>
+    <div class="bottom-text">
+         <i class="icon icon-csh-logo"></i> Computer Science House - Version 1.0
+        
+    </div>
+    
+
+</div>
+
+</body>
+</html>

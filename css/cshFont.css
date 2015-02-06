@@ -1,0 +1,181 @@
+/*
+CSH Custom Font Package
+Includes: 
+    - 1 CSH Logo
+
+Features:
+    - Package works the same as FontAwesome icons.
+    - Works just like a font (can be resized by using font-           size: and the color can be changed with color:)
+
+Use:
+insert <i class="icon icon-csh-logo"></i> into your code wherever you would like to add the logo
+
+Author:
+    Brandon Hudson (hudson)
+
+Date:
+    2/3/2015
+
+*/
+@font-face{font-family:'Fonticons';src:url('../fonts/cshFont.eot');src:url('../fonts/cshFont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/cshFont.woff') format('woff');
+font-weight:normal;
+font-style:normal;
+}
+.icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Fonticons';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.icon-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+.icon-2x {
+    font-size: 2em;
+}
+.icon-3x {
+    font-size: 3em;
+}
+.icon-4x {
+    font-size: 4em;
+}
+.icon-5x {
+    font-size: 5em
+}
+.icon-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+.icon-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+.icon-ul>li {
+    position: relative;
+}
+.icon-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: .14285714em;
+    text-align: center;
+}
+.icon-li.icon-lg {
+    left: -1.85714286em;
+}
+.icon-border {
+    padding: .2em .25em .15em;
+    border: solid .08em #eee;
+    border-radius: .1em;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.fa.pull-left {
+    margin-right: .3em;
+}
+.fa.pull-right {
+    margin-left: .3em;
+}
+.icon-spin {
+    -webkit-animation: icon-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+.icon-pulse {
+    -webkit-animation: icon-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+.icon-rotate-90 {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.icon-rotate-180 {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.icon-rotate-270 {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.icon-flip-horizontal {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1)
+}
+.icon-flip-vertical {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+    filter: none;
+}
+.icon-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+.icon-stack-1x,
+.icon-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.icon-stack-1x {
+    line-height: inherit;
+}
+.icon-stack-2x {
+    font-size: 2em;
+}
+.icon-inverse {
+    color: #fff;
+}
+.icon-csh-logo:before {
+    content: '\f000';
+}

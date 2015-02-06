@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;" />
+<title>Tunnels@RIT | BETA</title>
+<link rel="stylesheet" href="css/login.css" />
+<link rel="apple-touch-icon" sizes="76x76" href="images/tunnelsicon@76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="images/tunnelsicon@120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="images/tunnelsicon@152.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="images/tunnelsicon@60.png" />
+<link rel="shortcut icon" size="192x192" href="images/tunnelsicon@192.png">
+<script src="js/logincontrol.js"></script>
+<script src="js/version.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onload="vc();MM_preloadImages('images/google_signin_hover.png')">
+
+<div id="wrap" class="wrap">
+<div id="header" class="header">
+<table width="100%">
+<tr>
+<td align="center"><img src="images/logo.png" width="200" height="50" alt="Tunnels Logo" /></td>
+</tr>
+</table>
+</div>
+<div id="welcome" style="visibility:visible; z-index:1;">
+<table width="100%" height="100%">
+<tr>
+<td height="200px" align="center">
+<button class="loginbutton" onclick="sib()">Sign In</button><br />
+<button class="loginbutton" onclick="subb()">Sign Up</button>
+</td>
+</tr>
+</table>
+
+
+<table width="100%">
+<tr>
+<td style="" height="30px">
+<br />
+<span style="color: #FFF; font-size:10px; font-family: 'Open Sans', sans-serif;">Designed by Brandon Hudson. Copyright 2014.<br /><span id="versNum">Version Number</span></span>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div id="signup" style="visibility:hidden;" class="signup">
+This is signup
+
+<br /><br /><br />
+
+<table width="100%">
+<tr>
+<td style="" height="30px">
+<span style="color: #FFF; font-size:10px; font-family: 'Open Sans', sans-serif;">Designed by Brandon Hudson. Copyright 2014.<br /><span id="versNum2">Version Number</span></span>
+
+</td>
+</tr>
+</table>
+</div>
+<div id="signin" style="visibility:hidden;" class="signin">
+<form action="#" enctype="text/plain" class="form">
+<table width="100%">
+<tr>
+<td align="center">
+<input name="email" type="text" placeholder="Email"/>
+</td>
+</tr>
+<tr>
+<td align="center">
+<input name="password" type="password" placeholder="Password" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Sign In" name="submit" class="submit"/>
+</td>
+</tr>
+</table>
+</form>
+<table width="100%">
+<tr>
+<td>
+<br />
+<a href="#googleweb2auth" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('googlesignin','','images/google_signin.png',1)"><img src="images/google_signin_hover.png" alt="Google Signin" name="googlesignin" width="200" height="70" border="0" id="googlesignin" /></a></td>
+</tr>
+</table>
+<br />
+<table width="100%">
+<tr>
+<td>
+<span style="color: #FFF; font-size:10px; font-family: 'Open Sans', sans-serif;">Designed by Brandon Hudson. Copyright 2014.<br /><span id="versNum3">Version Number</span></span>
+<br /><br />
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
